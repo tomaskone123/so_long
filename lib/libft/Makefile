@@ -26,6 +26,7 @@ SOURCES = \
 	ft_strcpy.c \
 	ft_itoa.c \
 	ft_strmapi.c \
+	ft_strlcat.c \
 	ft_striteri.c \
 	ft_putendl_fd.c \
 	ft_putchar_fd.c \
@@ -34,6 +35,13 @@ SOURCES = \
 	ft_substr.c \
 	ft_calloc.c \
 	ft_split.c \
+	get_next_line.c \
+	get_next_line_utils.c \
+	ft_printf.c \
+	helper_functions.c \
+	spec_functions_1.c \
+	spec_functions_2.c \
+	character_count.c \
 
 
 
@@ -50,14 +58,14 @@ AR = ar rcs
 all: $(NAME)
 
 $(NAME): $(OBJECTS)
-	$(AR) $(NAME) $?
+	@$(AR) $(NAME) $?
 %.o: %.c
-	$(CC) -c $(CFLAGS) $?
+	@$(CC) -c $(CFLAGS) $?
 clean:
-	rm -f $(OBJECTS)
-	rm -f *.so
+	@rm -f $(OBJECTS)
+	@rm -f *.so
 fclean: clean
-	rm -f $(NAME)
+	@rm -f $(NAME)
 re: fclean all
 .PHONY: all bonus clean fclean re
 
