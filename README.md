@@ -8,6 +8,7 @@
 1. [About the Project](#about-the-project)
 2. [Features](#features)
 3. [Getting Started](#getting-started)
+4. [Acknowledgments](#acknowledgments)
 
 ---
 
@@ -62,6 +63,22 @@ The game accepts maps in `.ber` format. Each map must follow these rules:
   - One player starting position (`P`).
   - One exit (`E`).
   - One collectible item (`C`).
-    Thanks to the 42 Network for this project concept.
-    The MLX42 library for graphics rendering.
-    My peers for their support and feedback during development.
+
+---
+
+## Installation
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/tomaskone123/so_long.git
+   cd so_long
+   make
+   ./so_long path/to/your_map.ber
+
+---
+
+## Acknowledgments
+
+  - Thanks to the 42 Network for this project concept.
+  - The MLX42 library for graphics rendering.
+  - My peers for their support and feedback during development.
