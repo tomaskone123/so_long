@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   movement.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tkonecny <tkonecny@student.42.fr>          +#+  +:+       +#+        */
+/*   By: tomas <tomas@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/03 16:51:42 by tkonecny          #+#    #+#             */
-/*   Updated: 2024/09/05 15:52:48 by tkonecny         ###   ########.fr       */
+/*   Updated: 2025/01/26 23:32:14 by tomas            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,15 +50,15 @@ void	draw_layout(t_con *prg)
 
 char	**initialize_textures(char **textures, t_con *prg)
 {
-	textures[0] = "/nfs/homes/tkonecny/core/so_long/textures/brick.xpm42";
-	textures[1] = "/nfs/homes/tkonecny/core/so_long/textures/eud.xpm42";
-	textures[2] = "/nfs/homes/tkonecny/core/so_long/textures/grass.xpm42";
-	textures[4] = "/nfs/homes/tkonecny/core/so_long/textures/nexdoor.xpm42";
-	textures[5] = "/nfs/homes/tkonecny/core/so_long/textures/opendoor.xpm42";
+	textures[0] = "textures/brick.xpm42";
+	textures[1] = "textures/eud.xpm42";
+	textures[2] = "textures/grass.xpm42";
+	textures[4] = "textures/nexdoor.xpm42";
+	textures[5] = "textures/opendoor.xpm42";
 	if (prg->beer == 1)
-		textures[3] = "/nfs/homes/tkonecny/core/so_long/textures/beer.xpm42";
+		textures[3] = "textures/beer.xpm42";
 	else
-		textures[3] = "/nfs/homes/tkonecny/core/so_long/textures/pokemon.xpm42";
+		textures[3] = "textures/pokemon.xpm42";
 	return (textures);
 }
 
